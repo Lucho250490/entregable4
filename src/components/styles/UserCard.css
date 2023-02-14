@@ -3,7 +3,17 @@
   gap: 10px;
   border-radius: 4px;
   padding: 10px;
+  min-width: 280px;
+  height: 95%;
+  display: grid;  
+  align-items: center;
+ 
 
+}
+
+
+#userBackgrund {
+  background-color: none;
 }
 
 
@@ -35,6 +45,12 @@
 
 .userCard__freeDay {
   color: brown;
+}
+
+.userCard__Line { 
+  position: relative;
+  color: brown;
+  
 }
 .userCard__btn {
   display: flex;
@@ -76,4 +92,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.userBackgrund:hover {
+  background-color: brown;
 }

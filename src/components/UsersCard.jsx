@@ -19,7 +19,11 @@ const UsersCard = ({
         {user.first_name} {user.last_name}
       </h3>
 
-      <hr />
+      <div className="userCard__Line">
+          <hr /> 
+      </div>
+
+     
 
       <ul className="userCard__list">
         <li className="userCard__item">
@@ -35,10 +39,14 @@ const UsersCard = ({
         </li>
       </ul>
 
+      <div className="userCard__Line" >
       <hr />
+      </div>
+
+      
 
       <footer className=" userCard__btn ">
-        <button className="btn" onClick={() => deleteUser(user.id)}>
+        <button href="userBackgrund" className="btn" onClick={() => deleteUser(user.id)}>
           <i className="bx bx-trash bx-tada UserCard__trash"></i>
         </button>
         <button className="btn" onClick={handleOnClickEdit}>
