@@ -1,15 +1,20 @@
 import React from "react";
 
-import "./styles/UserCard.css"
+import "./styles/UserCard.css";
 
-const UsersCard = ({ user, deleteUser, setUpdatingUser, handleOnClickShow }) => {
+const UsersCard = ({
+  user,
+  deleteUser,
+  setUpdatingUser,
+  handleOnClickShow,
+}) => {
   const handleOnClickEdit = () => {
     setUpdatingUser(user);
-    handleOnClickShow()
+    handleOnClickShow();
   };
 
   return (
-    <article className="userCard" id= "userBackgrund" >
+    <article className="userCard" id="userBackgrund">
       <h3 className="userCard__name">
         {user.first_name} {user.last_name}
       </h3>
@@ -18,19 +23,15 @@ const UsersCard = ({ user, deleteUser, setUpdatingUser, handleOnClickShow }) => 
 
       <ul className="userCard__list">
         <li className="userCard__item">
-          <span className="userCard__email">CORREO</span>
+          <span className="userCard__email">EMAIL</span>
           <div> {user.email}</div>
-          
         </li>
         <li className="userCard__item">
-          <span className="userCard__freeDay">CUMPLEAÑOS</span> 
+          <span className="userCard__freeDay">BIRTHDAY</span>
 
           <div>
-          <i className="bx bx-gift"></i> {user.birthday}
-
+            <i className="bx bx-gift"></i> {user.birthday}
           </div>
-          
-          
         </li>
       </ul>
 
